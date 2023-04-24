@@ -1,0 +1,370 @@
+*{padding: 0; margin: 0; box-sizing: border-box; scroll-behavior: smooth; scroll-padding-top: 100px;}
+
+body{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('images/naruto.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+    opacity: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-family: cursive;
+    font-size: 3em;
+}
+
+.logo span{
+    color:orangered;
+}
+
+.logo span:hover{
+    color: black;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+.menu a:first-child{
+    color: dodgerblue;
+    border: solid;
+    border-width: 2px;
+}
+
+.menu a:first-child:hover{
+    color:black;
+}
+
+.menu a:hover{
+    color:dodgerblue;
+}
+
+.icon i{
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.icon i:hover{
+    color:black;
+}
+
+.icon a{
+    text-decoration: none;
+    background: dodgerblue;
+    color:white;
+    padding: 10px 25px;
+    margin-left: 20px;
+    border: solid;
+    font-family: sans-serif;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+.icon a:hover{
+    color:black;
+    background:aliceblue;
+    border: solid;
+}
+
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#camera{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#camera:hover{
+    color: dodgerblue;
+}
+
+.h-text h1{
+    font-family: sans-serif;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+.h-text input{
+    width: 60%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.h-text button{
+    width: 30%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.h-text button:hover{
+    background-color: white;
+    color: black;
+}
+
+.filter-gallery{
+    padding: 50px;
+}
+
+.portfolio-menu{
+    text-align:center ;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover{
+    background: orangered;
+    color: white;
+    border-radius: 8px;
+}
+
+li.active{
+    background: orangered;
+    color: white;
+    border-radius: 8px;
+}
+
+.portfolio-item{
+    width: 100%;
+}
+
+.portfolio-item .item{
+    width: 280px;
+    height: 280px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: inline-block;
+    align-items: center;
+    margin-left: 120px;
+}
+
+
+.member{
+    width: 100%;
+    padding: 30px 100px;
+    font-family: sans-serif;
+}
+
+.member-info{
+    text-align: center;
+}
+
+.member-info h2{
+    font-size: 2.5em;
+}
+
+.member-info h2 span{
+    color: dodgerblue;
+}
+
+.member-card{
+    text-align: center;
+    padding-top:40px;
+    width: 50%;
+    margin: auto;
+}
+
+.member-card .profile{
+    border-radius: 100%;
+    border: solid ;
+    border-width: 2px;
+}
+
+.member-card p{
+    margin: 20px 0px;
+    line-height: 1.8em;
+}
+
+.member-card h2{
+    margin: 20px 0px;
+}
+
+.member-card .icon img:hover{
+    transform: scale(0.9);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.m-images{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.m-images img{
+    width: 175px;
+    height: 175px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.m-images img:hover{
+    transform: scale(1.5);
+}
+
+footer{
+    width: 100%;
+    background: #262626;
+    padding: 50px 100px;
+}
+
+.news-letter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border:1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.news-letter >div{
+    flex-basis: 50%;
+}
+
+.n-text{
+    text-align: right;
+}
+
+.news-letter h2{
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.news-letter p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.news-letter label{
+    position: relative;
+}
+
+.news-letter input{
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.news-letter button{
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    width: 30%;
+    background:dodgerblue;
+    color: black;
+    border-radius: 0 8px 8px 0;
+}
+
+.news-letter button:hover{
+    background: black;
+    color: white;
+}
+
+.f-contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.f-contact >div{
+    flex-basis: 20%;
+}
+
+.f-contact p{
+    line-height: 2em;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+}
+
+.f-contact p:hover{
+    color: white;
+}
+
+.f-contact i{
+    background:white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease-out;
+    border: 1px solid white;
+}
+
+.f-contact i:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
